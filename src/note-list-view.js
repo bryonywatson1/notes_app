@@ -1,5 +1,5 @@
-var noteListView = function() {
-  this.notelist = new noteList();
+var noteListView = function(notelist) {
+  this.notelist = notelist;
 }
 
 noteListView.prototype.htmlString = function() {

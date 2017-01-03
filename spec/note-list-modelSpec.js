@@ -42,19 +42,9 @@ function testShowListReturnsMultipleNotes() {
 };
 
 
-function testStoresNewNoteModel() {
-  var notelist = new noteList();
-  var note1 = new Note("Favourite drink: seltzer.");
-  notelist.newNote(note1);
-  if (notelist.note !== "Favourite drink: seltzer."){
-    throw new Error("Notelist cannot create a new note model");
-  }
-};
-
 
 
 testListIsEmptyArray();
 testCanAddNoteToList();
 testListReturnsMultipleNotes();
 testShowListReturnsMultipleNotes();
-testStoresNewNoteModel();

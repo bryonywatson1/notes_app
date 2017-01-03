@@ -10,8 +10,3 @@ this.list.push(note);
 noteList.prototype.showList = function() {
 return this.list;
 }
-
-
-noteList.prototype.newNote = function(notemodel) {
-  this.note = notemodel;
-}

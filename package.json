@@ -1,0 +1,23 @@
+{
+  "name": "notes_app",
+  "version": "1.0.0",
+  "description": "\"notes app\"",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryonywatson1/notes_app.git"
+  },
+  "author": "\"\",",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryonywatson1/notes_app/issues"
+  },
+  "homepage": "https://github.com/bryonywatson1/notes_app#readme"
+}

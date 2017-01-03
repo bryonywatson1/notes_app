@@ -19,5 +19,5 @@ var assert = {
 
 (function() {
   var note = new Note("Test number 2.");
-  assert.isTrue(note.showNote() === "Test number 2.")
+  assert.isTrue(note.returnNote() === "Test number 2.")
 })();

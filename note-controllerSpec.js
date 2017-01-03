@@ -6,12 +6,13 @@ function testControllerCanBeInstantiated() {
 };
 
 
-innerHTML property of the app element contains HTML somewhat similar to: <ul><li><div>Favourite food: pesto</div></li></ul>.
-(Youll need to mock some stuff to achieve this)
+///innerHTML property of the app element contains HTML somewhat similar to:
+///<ul><li><div>Favourite food: pesto</div></li></ul>.
+///(Youll need to mock some stuff to achieve this)
 
 function testInnerAppElement() {
   var notecontroller = new noteController();
-  if(notecontroller === undefined) {
-    throw new Error("notecontroller doesn't exist");
+  if(notecontroller) {
+    throw new Error("..");
   }
 };

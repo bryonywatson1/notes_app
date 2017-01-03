@@ -2,9 +2,6 @@ var noteListView = function(notelist) {
   this.notelist = notelist;
 }
 
-noteListView.prototype.htmlString = function() {
-  return "<ul></ul>"
-}
 
 noteListView.prototype.view = function() {
   var string = "<ul>"

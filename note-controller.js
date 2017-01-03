@@ -1,7 +1,7 @@
 function noteController(){
   this.notelist = new noteList();
 };
-noteController.prototype.addFavDrink = function(){
+noteController.prototype.addFavourite = function(){
   this.notelist.add(new Note("Favourite Drink: seltzer"));
 }
 noteController.prototype.showNotes = function(){

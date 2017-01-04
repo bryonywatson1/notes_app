@@ -42,9 +42,21 @@ function testShowListReturnsMultipleNotes() {
 };
 
 
+function testStoreNoteSavesNoteId() {
+  var notelist = new NoteList();
+  var note1 = { text: "firstnote" };
+  var note2 = { text: "secondnote" };
+  notelist.storeNote(note1);
+  notelist.storeNote(note2);
+  if (notelist.list[1].id !== 1 && notelist.list[0].id !== 0){
+    throw new Error('store note is not saving note id')
+  }
+}
+
 
 
 testListIsEmptyArray();
 testCanAddNoteToList();
 testListReturnsMultipleNotes();
 testShowListReturnsMultipleNotes();
+testStoreNoteSavesNoteId();

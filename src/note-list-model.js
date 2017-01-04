@@ -1,16 +1,16 @@
 (function(exports) {
   var NoteList = function() {
-  this.list = [];
-  this.note = 'empty';
-};
+    this.list = [];
+  };
 
-NoteList.prototype.storeNote = function(note) {
-this.list.push(note);
-}
+  NoteList.prototype.storeNote = function(note) {
+    note.id = this.list.length
+    this.list.push(note);
+  }
 
-NoteList.prototype.showList = function() {
-return this.list;
-};
+  NoteList.prototype.showList = function() {
+    return this.list;
+  };
 
-exports.NoteList = NoteList;
+  exports.NoteList = NoteList;
 })(this);

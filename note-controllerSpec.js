@@ -5,11 +5,6 @@ function testControllerCanBeInstantiated() {
   }
 };
 
-
-///innerHTML property of the app element contains HTML somewhat similar to:
-///<ul><li><div>Favourite food: pesto</div></li></ul>.
-///(Youll need to mock some stuff to achieve this)
-
 function testInnerAppElement() {
   var notecontroller = new NoteController();
   notecontroller.addFavourite();

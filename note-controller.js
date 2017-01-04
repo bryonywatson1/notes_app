@@ -1,4 +1,5 @@
-function NoteController(){
+(function(exports){
+  function NoteController(){
   this.notelist = new NoteList();
 };
 NoteController.prototype.addFavourite = function(){
@@ -7,3 +8,6 @@ NoteController.prototype.addFavourite = function(){
 NoteController.prototype.showNotes = function(){
   document.getElementById('app').innerHTML = new NoteListView(this.notelist).view();
 };
+
+exports.NoteController = NoteController;
+})(this);

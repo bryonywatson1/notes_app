@@ -1,4 +1,5 @@
-var NoteListView = function(notelist) {
+(function(exports) {
+  var NoteListView = function(notelist) {
   this.notelist = notelist;
 }
 
@@ -13,4 +14,7 @@ NoteListView.prototype.view = function() {
 
 NoteListView.prototype.addNote = function(note) {
       this.notelist.storeNote(note);
-    }
+    };
+
+    exports.NoteListView = NoteListView;
+  })(this);

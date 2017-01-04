@@ -4,14 +4,14 @@ window.onload = function(){
   nc.addFavourite();
   nc.showNotes();
 
-  window.addEventListener("hashchange", function(clickEvent){
+  window.onhashchange = function(clickEvent){
     var id = nc.getNoteId();
     nc.displaySingleNote(id);
-  })
-
-  document.getElementById('home').addEventListener('click'), function(){
-    nc.showNotes();
   }
+
+  document.getElementById("home").addEventListener("click", function(clickEvent){
+    nc.showNotes();
+  })
 
   window.addEventListener('submit', function(submitEvent){
     submitEvent.preventDefault();

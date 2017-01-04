@@ -1,7 +1,7 @@
 window.onload = function(){
   var nc = new NoteController();
 
-  nc.addFavourite();
+  nc.newNote('Favourite Drink: seltzer');
   nc.showNotes();
 
   window.onhashchange = function(clickEvent){

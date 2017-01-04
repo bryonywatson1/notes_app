@@ -15,8 +15,12 @@ function testTakesNoteModelOnInstantiation() {
 
 function testReturnsHTMLString() {
   var note = { text : "Note model"};
-  var singleNoteView = new singleNoteView(note);
+  var singleNoteView = new SingleNoteView(note);
   if (singleNoteView.returnHTML() !== "<div>Note model</div>"){
     throw new Error('Does not return string of HTML')
   }
 };
+
+testCanInstantiateSingleNoteView();
+testTakesNoteModelOnInstantiation();
+testReturnsHTMLString();

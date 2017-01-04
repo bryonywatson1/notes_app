@@ -9,7 +9,7 @@ function testInnerAppElement() {
   var notecontroller = new NoteController();
   notecontroller.addFavourite();
   notecontroller.showNotes();
-  if(document.getElementById('app').innerHTML !== "<ul><li>Favourite Drink: seltzer</li></ul>") {
+  if(document.getElementById('app').innerHTML !== "<ul><li>Favourite Drink: sel</li></ul>") {
     throw new Error("..");
   }
 };

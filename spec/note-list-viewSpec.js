@@ -13,7 +13,16 @@ if(notelistview.view() !== "<ul><li>My name is Bryony</li></ul>"){
 }
 };
 
+function testNoteCropsStringAt20Chars(){
+  var notelistview = new NoteListView(new NoteList);
+  notelistview.addNote({ text: "My name is Bryony" });
+  notelistview.addNote({ text: "This string will be over 20 chars long"})
 
+  if(notelistview.view() !== "<ul><li>My name is Bryony</li><li>This string will be </li></ul>" ){
+    throw new Error("List is not being sliced apart >:3")
+  }
+};
 
 testNoteListView();
 testNoteShowsUpInNoteList();
+testNoteCropsStringAt20Chars();

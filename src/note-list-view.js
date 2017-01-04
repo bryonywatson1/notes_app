@@ -1,9 +1,9 @@
-var noteListView = function(notelist) {
+var NoteListView = function(notelist) {
   this.notelist = notelist;
 }
 
 
-noteListView.prototype.view = function() {
+NoteListView.prototype.view = function() {
   var string = "<ul>"
      for(var i = 0; i < this.notelist.list.length; i++){
        string += "<li>" + this.notelist.list[i].text + "</li>"
@@ -11,6 +11,6 @@ noteListView.prototype.view = function() {
      return string + "</ul>";
 }
 
-noteListView.prototype.addNote = function(note) {
+NoteListView.prototype.addNote = function(note) {
       this.notelist.storeNote(note);
     }

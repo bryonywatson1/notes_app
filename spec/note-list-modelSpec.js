@@ -1,5 +1,5 @@
 function testListIsEmptyArray() {
-  var notelist = new noteList();
+  var notelist = new NoteList();
 
   if(notelist.list.length !== 0) {
     throw new Error("Notes array is not empty");
@@ -8,7 +8,7 @@ function testListIsEmptyArray() {
 };
 
 function testCanAddNoteToList(){
-  var notelist = new noteList();
+  var notelist = new NoteList();
   var note = { text: "firstnote" };
   notelist.storeNote(note);
 
@@ -18,7 +18,7 @@ function testCanAddNoteToList(){
 };
 
 function testListReturnsMultipleNotes() {
-  var notelist = new noteList();
+  var notelist = new NoteList();
   var note1 = { text: "firstnote" };
   var note2 = { text: "secondnote" };
   notelist.storeNote(note1);
@@ -30,7 +30,7 @@ function testListReturnsMultipleNotes() {
 };
 
 function testShowListReturnsMultipleNotes() {
-  var notelist = new noteList();
+  var notelist = new NoteList();
   var note1 = { text: "firstnote" };
   var note2 = { text: "secondnote" };
   notelist.storeNote(note1);

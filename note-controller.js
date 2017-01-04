@@ -1,9 +1,9 @@
-function noteController(){
-  this.notelist = new noteList();
+function NoteController(){
+  this.notelist = new NoteList();
 };
-noteController.prototype.addFavourite = function(){
-  this.notelist.add(new Note("Favourite Drink: seltzer"));
+NoteController.prototype.addFavourite = function(){
+  this.notelist.storeNote(new Note("Favourite Drink: seltzer"));
 }
-noteController.prototype.showNotes = function(){
-  document.getElementById('app').innerHTML = new noteListView(this.notelist).view();
+NoteController.prototype.showNotes = function(){
+  document.getElementById('app').innerHTML = new NoteListView(this.notelist).view();
 };

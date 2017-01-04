@@ -6,7 +6,10 @@ var NoteListView = function(notelist) {
 NoteListView.prototype.view = function() {
   var string = "<ul>"
      for(var i = 0; i < this.notelist.list.length; i++){
-       string += "<li>" + this.notelist.list[i].text.slice(0,20) + "</li>"
+       var note = this.notelist.list[i];
+       string += "<li><a id='click-link-" + note.id + "' " +
+       "href='#notes/"+note.id + "'>" +
+       note.text.slice(0,20) + "</a></li>"
      }
      return string + "</ul>";
 }

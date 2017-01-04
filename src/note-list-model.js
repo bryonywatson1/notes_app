@@ -4,7 +4,7 @@
   };
 
   NoteList.prototype.storeNote = function(note) {
-    note.id = this.list.length
+    note.id = this.list.length;
     this.list.push(note);
   }
 

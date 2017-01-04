@@ -9,8 +9,8 @@ function testInnerAppElement() {
   var notecontroller = new NoteController();
   notecontroller.addFavourite();
   notecontroller.showNotes();
-  if(document.getElementById('app').innerHTML !== "<ul><li>Favourite Drink: sel</li></ul>") {
-    throw new Error("..");
+  if(document.getElementById('app').innerHTML !== '<ul><li><a id="click-link-0" href="#notes/0">Favourite Drink: sel</a></li></ul>') {
+    throw new Error("InnerHTML was not changed correctly");
   }
 };
 

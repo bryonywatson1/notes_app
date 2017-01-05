@@ -6,6 +6,7 @@
     var output = ["<ul>"];
     displayNotes(list).forEach (function (note) {
       output.push('<li><div id="'+id+'">'+'<a href=#'+id+'>'+note.text.substring(0,20)+'</a></div></li>');
+      note.id = id;
       id ++;
     });
     output.push("</ul>");

@@ -33,10 +33,10 @@ function testsIfHTMLChanges() {
 
 (function testsURLChange(){
   document.getElementById('0').click();
-    if (document.URL !== "file:///Users/bryonywatson/Documents/projects/notes_app/test.html#0") {
+    if (document.URL !== "file:///Users/Tudor/Desktop/projects/notes-app/test.html#0") {
       throw new Error("URL has not changed");
     } else {
-      console.log("testsURLChange passed")
+      console.log("testsURLChange passed");
     }
 
 })();

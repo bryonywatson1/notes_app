@@ -30,6 +30,6 @@ NoteController.prototype.displaySingleNote = function () {
   return singleNote.displayHTML();
 };
 
-// NoteController.prototype.makeNewNote = function() {
-//   this.list.createNote();
-// }
+NoteController.prototype.makeNewNote = function(text) {
+  createNote(this.view.list, text);
+};

@@ -10,7 +10,6 @@
       id ++;
     });
     output.push("</ul>");
-    console.log(output.join(""));
     return output.join("");
   }
 

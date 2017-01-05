@@ -2,9 +2,7 @@
   function NoteController(){
   this.notelist = new NoteList();
 };
-NoteController.prototype.addFavourite = function(){
-  this.notelist.storeNote(new Note("Favourite Drink: seltzer"));
-}
+
 NoteController.prototype.newNote = function(text){
   this.notelist.storeNote(new Note(text));
 }

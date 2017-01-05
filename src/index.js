@@ -8,3 +8,9 @@ window.addEventListener("hashchange", function () {
   controller.findNote();
   controller.changeDiv(controller.displaySingleNote());
 });
+
+window.addEventListener("submit", function() {
+  event.preventDefault();
+  var text = document.getElementById('text').value;
+  console.log(text);
+})

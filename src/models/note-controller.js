@@ -29,3 +29,7 @@ NoteController.prototype.displaySingleNote = function () {
   var singleNote = new SingleNoteViewObject(this.findNote());
   return singleNote.displayHTML();
 };
+
+// NoteController.prototype.makeNewNote = function() {
+//   this.list.createNote();
+// }

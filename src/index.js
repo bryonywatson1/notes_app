@@ -1,6 +1,4 @@
 list = new List();
-createNote(list, "Favourite drink: seltzer");
-createNote(list, "A very long string just to test the functionality");
 var controller = new NoteController(list);
 
 window.addEventListener("submit", function() {
@@ -12,7 +10,12 @@ window.addEventListener("submit", function() {
 });
 
 window.addEventListener("hashchange", function () {
-  controller.findNote();
-  controller.changeDiv(controller.displaySingleNote());
+  if(window.location.href === "http://localhost:8080/") {
+    getHTML(controller.view);
+  }
+  else {
+    controller.findNote();
+    controller.changeDiv(controller.displaySingleNote());
+  }
 });
 getHTML(controller.view);

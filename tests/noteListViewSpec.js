@@ -14,7 +14,6 @@ var view = new View(new List());
   view.list.notes = [];
   view.list.notes[0] = new Note("I like beer");
   view.list.notes[1] = new Note("I like pizza");
-  console.log(htmlList(view.list));
   if(htmlList(view.list) !== '<ul><li><div id="0"><a href=#0>'+'I like beer</a></div></li><li><div id="1"><a href=#1>I like pizza</a></div></li></ul>') {
     throw new Error("Returned incorrect string");
 

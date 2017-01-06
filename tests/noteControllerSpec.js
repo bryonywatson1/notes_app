@@ -2,14 +2,14 @@ function doubleNote() {
   this.text = 'Note';
   this.id = 0;
 }
-var testNote = new doubleNote();
-function doubleList() {
-  this.notes = [testNote];
+var testNote = new doubleNote(note);
+function doubleList(note) {
+  this.notes = [note];
 }
-var list = new doubleList();
+var list = new doubleList(testNote);
 
 var noteController = new NoteController(list);
-
+var lastController = new NoteController(new doubleList());
 
 
 (function testsInstatiationOfNoteController() {
@@ -49,4 +49,8 @@ var noteController = new NoteController(list);
   else {
     console.log('testsMakingANewNote test passed');
   }
+})();
+
+(function testsIfHTMLforEmptyListIsDisplayedAtAppLoad () {
+  getHTML()
 })();
